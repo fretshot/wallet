@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_custom_calendar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Gastado hoy"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:text="¡Estás excediendo tu limite diario!"
+        android:textColor="#ff0000"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/gastoTotalMNX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="$ 0.00 MNX"
+        android:textSize="30sp"/>
+
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:maxDate="12/31/2020"
+        android:minDate="01/01/2018" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="150dp"
+        android:text="MNX"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="230dp"
+        android:text="USD"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="310dp"
+        android:text="CLP"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:text="Comida"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/campoComida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="150dp"
+        android:text="0"
+        />
+
+    <TextView
+        android:id="@+id/campoComidaUSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="230dp"
+        android:text="0"
+        />
+
+    <TextView
+        android:id="@+id/campoComidaCLP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="310dp"
+        android:text="0"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:text="Transporte"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/campoTransporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="150dp"
+        android:text="0"
+        />
+
+    <TextView
+        android:id="@+id/campoTransporteUSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="230dp"
+        android:text="0"
+        />
+
+    <TextView
+        android:id="@+id/campoTransporteCLP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="310dp"
+        android:text="0"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:text="Entretenimiento"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/campoEntretenimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="150dp"
+        android:text="0"
+        />
+
+    <TextView
+        android:id="@+id/campoEntretenimientoUSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="230dp"
+        android:text="0"
+        />
+
+    <TextView
+        android:id="@+id/campoEntretenimientoCLP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="310dp"
+        android:text="0"
+        />
+
+    <TextView
+        android:id="@+id/texto_campoOtros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:text="Otros"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/campoOtros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="150dp"
+        android:text="0"
+        />
+
+    <TextView
+        android:id="@+id/campoOtrosUSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="230dp"
+        android:text="0"
+        />
+
+    <TextView
+        android:id="@+id/campoOtrosCLP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="310dp"
+        android:text="0"
+        />
+
+
+
+
+</RelativeLayout>

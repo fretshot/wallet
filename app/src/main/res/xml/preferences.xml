@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:id="@+id/usd"
+        android:dialogTitle="Cambio de dolar (USD)"
+        android:key="usd"
+        android:summary="Toque para modificar"
+        android:title="Cambio de dolar (USD)"
+        android:defaultValue="20.14"
+        android:digits="0123456789."
+        android:inputType="numberDecimal"
+        android:icon="@drawable/bill"
+        />
+
+    <EditTextPreference
+        android:id="@+id/clp"
+        android:dialogTitle="Cambio de peso chileno (CLP)"
+        android:key="clp"
+        android:summary="Toque para modificar"
+        android:title="Cambio de peso chileno (CLP)"
+        android:defaultValue="0.030"
+        android:digits="0123456789."
+        android:inputType="numberDecimal"
+        android:icon="@drawable/bill"
+        />
+
+    <EditTextPreference
+        android:id="@+id/limite"
+        android:dialogTitle="Limite de gasto"
+        android:key="limite"
+        android:summary="Toque para modificar"
+        android:title="Limite de gasto"
+        android:defaultValue="1000"
+        android:digits="0123456789."
+        android:inputType="numberDecimal"
+        android:icon="@drawable/warning"
+        />
+
+
+</PreferenceScreen>
